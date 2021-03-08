@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color:white;
+    text-align: center;
+    border: 10px double white;
+    border-radius: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+

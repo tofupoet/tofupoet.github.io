@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="ANIskullScreen.gif">
+        <title>
+            cole's sketchbook
+        </title>
+    </head>
+
+    <body>
+        <br>
+        <img src="dancing_skeleton4.gif">
+        <br>
+        <h1>
+            welcome to my sketchbook page :)
+        </h1>
+        <p>please dont steal my icon or anything
+          <br>i'll keep updating this as I make stuff!
+          <br>currently this is only what I had already exported on my computer
+          <br>
+          <br>⬛⬛⬜⬜⬜⬜⬜⬜ 25% uploaded
+          <br>
+        </p>
+        <img src="dancing_skeleton4.gif">
+        <br>
+        <br>
+    </body>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, 'character art')">character art</button>
+          </div>
+        <div>
+        <div id="character art" class="tabcontent">
+            <br><link rel="stylesheet" href="index modal test style.css">
+        
+        <div class="row">
+          <div class="column">
+            <img src="bill n ted.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="bonez concept art 1.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="rod dodole.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="diddy gift comm.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="stew briggs.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="lemon clown.PNG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+              
+        
+            <div class="mySlides">
+              <div class="numbertext">bill n ted.png</div>
+              <img src="bill n ted.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">bonez concept art 1.png</div>
+              <img src="bonez concept art 1.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="rod dodole.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="diddy gift comm.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="stew briggs.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="lemon clown.PNG" style="width:100%">
+              </div>
+              
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            
+          </div>
+        </div>
+        
+        
+        <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        var modal = document.getElementById('myModal');
+modal.addEventListener('click',function(){
+this.style.display="none";
+})
+
+        </script>
+            
+          </div>
+          </div>
+        </div>
+        
+        </div>
+        
+        
+          <div class="clearfix"></div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+
+        
+        </body>    
+
+<!--
+  template for hover tab content
+<br>
+<head>placeholder</head>
+  content vv 
+<div class="row"> 
+<div class="column">
+  <img src="" style="width:100%">
+</div>
+</div>
+-->
+
+
+</body>
+</html>
